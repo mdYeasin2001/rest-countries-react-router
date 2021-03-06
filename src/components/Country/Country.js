@@ -21,6 +21,7 @@ const Country = (props) => {
                 <h1>{name}</h1>
                 <p>Region: {region}</p>
                 <Link to={`/countries/${name}`}><button>More Details</button></Link>
+                <button onClick={() => props.handleClick(name)}>More Details 2</button>
             </div>
         </div>
     );
